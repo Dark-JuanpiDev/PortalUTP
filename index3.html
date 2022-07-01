@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Secciones UTP xd</title>
+	    <link rel="icon" type="ico" href="C:\Users\Juanpi\Downloads\descarga.jpg">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Square+Peg&display=swap" rel="stylesheet">
+    </head>  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        jQuery('document').ready(function($){
+
+var menuBtn = $('.menu-icon'),
+    menu = $('.navigation ul');
+
+menuBtn.click(function() {
+
+    if (menu.hasClass('show')){
+
+      menu.removeClass('show');	
+    } else {
+
+      menu.addClass('show');
+    }	
+});	
+
+});
+    </script>
+    <style>
+        *
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+    color: black;
+	font-size: 1.3rem;
+	line-height: 1.3em;
+    margin: 0;
+    font-family: Dancing Script;
+    background: rgb(255, 255, 255);
+}
+
+.content
+{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.container
+{
+	width: 85%;
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+.header
+{
+	background: #e03a3a;
+	color: white;
+	padding: 2rem 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+	.header a
+	{
+		color: white;
+		text-decoration: none;
+	}
+
+.programacion-nav-container
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.programacion
+{
+	letter-spacing: 5px;
+	font-size: 1.3em;
+	width: 250px;
+}
+
+.menu-icon
+{
+	display: none;
+}
+
+.navigation ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+	.navigation ul li
+	{
+		display: inline-block;
+	}
+
+		.navigation ul li a 
+		{
+			display: block;
+			padding: 0.5rem 1rem;
+			transition: all 0.4s linear;
+			border-radius: 5px;
+		}
+
+			.navigation ul li a:hover
+			{
+				background: #4a4a4a;
+			}	
+
+.main
+{
+    font-family: Lobster;
+    padding-top: 9rem;
+}
+
+    .main a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+.footer
+{
+    background: white;
+    color: black;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+@media only screen and (max-width: 767px)
+{
+	.menu-icon
+	{
+		display: block;
+		cursor: pointer;
+		padding: 0.5rem 1rem;
+	}
+
+	.navigation 
+	{
+		width: 100%;
+		margin-top: 1rem;
+	}
+
+		.navigation ul
+		{
+			display: none;
+		}
+
+		.navigation ul.show
+		{
+			display: block;
+		}
+
+		.navigation ul li
+		{
+			display: inline-block;
+		}
+
+			.navigation ul li a 
+			{
+				display: block;
+				padding: 0.5rem 0;
+				transition: all 0.4s linear;
+				border-radius: 5px;
+			}
+
+				.navigation ul li a:hover
+				{
+					background: #4a4a4a;
+				}
+}
+    </style> 
+    <body>
+        <header class="header"> 
+            <div class="container programacion-nav-container">
+                <a href="https://www.utp.edu.pe/" target="_BLANK"><img src="logo_utp.png" class="programacion"></a>
+                <span class="menu-icon">Menú</span>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="#section_1">Sectión 1</a></li>
+                        <li><a href="#section_2">Sectión 2</a></li>
+                        <li><a href="#section_3">Sectión 3</a></li>
+                        <li><a href="#section_4">Sectión 4</a></li>
+                        <li><a href="#section_5">Sectión 5</a></li>
+                        <li><a href="#section_6">Sectión 6</a></li>
+                        <li><a href="#section_7">Sectión 7</a></li>
+                    </ul>
+                </nav>
+                <section class="content" id="section_1"><p>Programación WEB</p></section>
+                <section class="content" id="section_2"><p>DATA CENTER</p></section>
+                <section class="content" id="section_3"><p>JavasScript</p></section>
+                <section class="content" id="section_4"><p>Python</p></section>
+                <section class="content" id="section_5"><p>PHP</p></section>
+                <section class="content" id="section_6"><p>Framework</p></section>
+                <section class="content" id="section_7"><p>Java</p></section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p class="p2">Página diseñada por @Juanpi</p>
+            </div>    
+        </footer>
+    </body> 
+</html>    
