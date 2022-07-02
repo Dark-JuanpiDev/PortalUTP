@@ -10,11 +10,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Square+Peg&display=swap" rel="stylesheet">
 </head>
 <style>
-		/*el scroll-behavior sirve para cambiar de seccion en html rapidamente */
-	/*scroll-behavior: smooth;*/
-body
-{
-	background: white;
+	body{
+	background: rgb(255, 255, 255);
 	font-family: Dancing Script;
 	color: #333;
 	font-size: 1.3rem;
@@ -23,94 +20,7 @@ body
 	padding: 0;
 }
 
-h1
-{
-	font-size: 2rem;
-	line-height: 1.3em;
-}
-
-p
-{
-	margin-bottom: 1.6em;
-	font-weight: lighter;
-}
-
-.box 
-{
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 15px;
-}
-
-.container
-{
-	width: 85%;
-	max-width: 850px;
-	margin: 0 auto;
-}
-
-.p1
-{
-	font-family: Lobster;
-}
-
-.black-box
-{
-	background-color: black;
-	background: red;
-	padding: 10px;
-	margin: 20px 20px 30px 20px;
-	color: white;
-}
-
-	.black-box ol
-	{
-		color: white;
-	}
-
-		.black-box ol li a 
-		{
-			text-decoration: none;
-			color: white;
-			font-weight: lighter;
-		}
-
-			.black-box ul li a
-			{
-				text-decoration: none;
-				color: white;
-				font-weight: lighter;
-			}
-
-		.black-box table
-		{
-			color: white;
-        }
-
-		.black-box td{
-			padding: 10px;
-		}
-
-		.black-box ul li a
-		{
-			text-decoration: none;
-			color: white;
-		}
-td 
-{
-	text-align: center;
-	font-family: Arial;
-	font-size: 15px;
-}		
-
-.td 
-{
-	text-align: center;
-}
-
-.header
-{
+.header{
 	background: #e03a3a;
 	color: white;
 	padding: 2rem 0;
@@ -120,103 +30,84 @@ td
 	top: 0;
 	right: 0;
 }
-	.header a
-	{
-		color: white;
-		text-decoration: none;
-	}
 
-.programacion-nav-container
-{
+.container{
+	width: 75%;
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+.programacion-nav-container{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
-.programacion
-{
-	letter-spacing: 5px;
-	font-size: 1.3em;
+.menu-icon{
+    display: none;
+}
+
+.programacion{
 	width: 250px;
 }
 
-.menu-icon
-{
-	display: none;
-}
-
-.h2
-{
-	margin: 0;
-	padding: 0;
-}
-
-	.p2
-	{
-		margin: 0;
-		padding: 0px 0px -6px 20px
-	}
-
-		.p3
-		{
-			font-size: 15px;
-		}
-		
-		.table .tr1{
-			font-weight: bolder;
-		}
-
-			.table .tr2{
-				font-weight: lighter;
-			}
-
-		.table td
-		{
-			padding: 20px;
-		}		
-					
-.navigation ul
-{
+.navigation ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-	.navigation ul li
-	{
+	.navigation ul li{
 		display: inline-block;
 	}
 
-		.navigation ul li a 
-		{
+		.navigation ul li a {
 			display: block;
 			padding: 0.5rem 1rem;
-			transition: all 0.4s linear;
+            text-decoration: none;
+            color: black;
+			transition: all 0.5s linear;
 			border-radius: 5px;
+            background: white;
 		}
 
-			.navigation ul li a:hover
-			{
-				background: #4a4a4a;
+			.navigation ul li a:hover{
+				background:#4a4a4a;
+                color: white;
 			}
-
-.h1
-{
-	text-align: center;
-}			
 
 .main
 {
-	font-family: Lobster;
-	padding-top: 9rem;
-	background-color: white;
-	width: 85%;
-	height: 100%;
-	max-width: 850px;
+    font-family: Lobster;
+    padding-top: 9rem;
+    background-color: white;
+    width: 75%;
+	max-width: 95%;
 	margin: 0 auto;
-	border-radius: 10px;
 }
+
+.h2{
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.p2{
+	margin: 0;
+}
+
+    .p2-1{
+        display: none;
+    }
+
+    .p2-2{
+        display: none;
+    }
+
+    .p2-3{
+        display: none;
+    }
 
 .expandir
 {
@@ -230,81 +121,220 @@ td
 		flex-grow: 1;
 		height: 70px;
 	}
-
-.expandir1
-{
-	display: inline-flex;
-	flex-direction: row;
-	display: flex;
+    
+.expandir1{
+    display: inline-flex;
+    flex-direction: row;
+    display: flex;
 }	
-
-	.juanpi
-	{
-		flex-grow: 1;
-		height: 70px;
+    
+    .juanpi{
+        flex-grow: 1;
+        height: 70px;
     }
 
-.footer
-{
-	background: #757575;
-	padding: 4rem 0;
-	text-align: center;
-	margin-top: 6rem;
+.div1{
+    margin-top: 1rem;
+    height: 100px;
+    width: 826px;
+    background-color: rgb(255, 0, 0);
+    display: inline-table;
+    border-radius: 10px;
+    text-align: center;
 }
 
-	.footer a
-	{
-		text-decoration: none;
-		color: white;
-	}
+    .ol{
+        list-style-type: disc;
+        list-style-position: outside;
+    }
 
-@media only screen and (max-width: 767px)
-{
-	.menu-icon
-	{
-		display: block;
-		cursor: pointer;
-		padding: 0.5rem 1rem;
-	}
+    .ol li{
+        margin: 15px;
+    }
 
-	.navigation 
-	{
-		width: 100%;
-		margin-top: 1rem;
-	}
+    .ol li a{
+        color: white;
+        text-decoration: none;
+    }
 
-		.navigation ul
-		{
-			display: none;
-		}
-
-		.navigation ul.show
-		{
-			display: block;
-		}
-
-		.navigation ul li
-		{
-			display: inline-block;
-		}
-
-			.navigation ul li a 
-			{
-				display: block;
-				padding: 0.5rem 0;
-				transition: all 0.4s linear;
-				border-radius: 5px;
-			}
-
-				.navigation ul li a:hover
-				{
-					background: #4a4a4a;
-				}
+table{
+    padding: 10px;
+    border-spacing: 0;
+    width: 800px;
 }
-@media screen and (max-width: 400px) {
-	.black-box{
-		width: 50%;
-	}
+
+    .tr1{
+        text-align: center;
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+
+    .tr2{
+        text-align: center;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+@media only screen and (max-width: 1121px){
+    .programacion{
+        width: 230px;
+    }
+    .navigation ul li a{
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+
+    .p2{
+        display: none;
+    }
+
+        .p2-1{
+            margin: 0;
+            display: block;
+        }
+
+    .arriba{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .div1{
+        height: 100px;
+        width: 620px;
+    }
+
+    table{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 930px){
+    .programacion{
+        width: 200px;
+    }
+    .navigation ul li a{
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .div1{
+        height: 100px;
+        width: 386px;
+    }
+
+    .p2-1{
+        display: none;
+    }
+
+    .p2-2{
+        display: block;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 728px){
+    .programacion{
+        width: 250px;
+    }
+
+    .header{
+        padding: 0.1rem 0;
+    }
+
+    .programacion-nav-container{
+        margin-top: 20px;
+        margin-bottom: 14;
+    }
+
+    .menu-icon{
+        display: block;
+        color: black;
+        cursor: pointer;
+        transition: all 0.5s linear;
+        padding: 0.5rem 1rem;
+        background: white;
+        border-radius: 5px;
+    }
+
+        .menu-icon:hover{
+            background: #4a4a4a;
+            color: white;
+        }
+
+    .navigation{
+        width: 50%;
+        margin-top: 2rem;
+    }
+
+        .navigation ul{
+            display: none;
+        }
+
+            .navigation ul.show{
+                display: block;
+            }
+
+                .navigation ul li{
+			        display: block;
+                    margin-bottom: 1rem;
+                    margin-right: 9rem;
+		        }
+
+			        .navigation ul li a 
+			        {
+                        font-size: 20px;
+				        padding: 10px 0px 10px auto;
+				        transition: all 0.5s linear;
+				        border-radius: 5px;
+			        }
+
+			            .navigation ul li a:hover
+				        {
+					        background: #4a4a4a;
+				        }
+    .div1{
+        height: 100px;
+        width: 386px;
+    }
+
+    .p2-2{
+        display: none;
+    }
+
+    .p2-3{
+        display: block;
+        margin: 0;
+    }
+
+    table{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 594px){
+    .navigation ul li{
+        margin-bottom: 1rem;
+    }
+
+        .navigation ul li a 
+        {
+            font-size: 1.3rem;
+            padding: 5px 80px 5px 20px;
+        }
+    
+    .arriba{
+        margin-top: 1rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    .div1{
+        height: 100px;
+        width: 286px;
+    }
+
 }
 </style>
 <body>
@@ -314,197 +344,92 @@ td
 			<span class="menu-icon">Menú</span>
 			<nav class="navigation">
 				<ul>
-					<li><a href="index.html">Inicio</a></li>
+					<li><a href="pagina principal.html">Inicio</a></li>
 					<li><a href="https://portal.utp.edu.pe/login?user=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI4MWUwYzVkZS1jZjNmLTVmOWUtYWQxNS0yZTk4YTY1ZmU2NWEiLCJyb2xlIjoiU1RVREVOVCIsInByb3ZpZGVyIjoiU1RVREVOVCIsImV4cCI6MTY1MTg5MzQ5N30.4pFoJIYLAfFtkxh0yd2ydD1PxFipXC1uFkcAkPnmFJM-pLZx40WwM-3GLa5Ydwi9H6_8i6YZmeFzEFrXz93xzA&key=pZLDLXaXtGZ822cVEFQHSKPobl1xT1R/UMCowPOTvBnvhHssDFsPTQ==" target="_BLANK">Horarios</a></li>
 					<li><a href="#">Servicios</a></li>
 					<li><a href="#">Contacto</a></li>
-					<li><a href="index2.html">Cerrar Sesión</a></li>
+					<li><a href="Iniciar sesión.html">Cerrar Sesión</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	<main class="main">
-		<div class="container">
-			<h1 class="h1">Universidad Tecnológica del Perú</h1>
-			<h2 class="h2">Datos:</h2>
-			<p class="p2">.......................................................................................................................................................</p>
-			<div class="expandir">
+    <main class="main">
+        <div class="container">
+		<h1 style="text-align: center;">Universidad Tecnológica del Perú</h1>
+		<h2 class="h2">Datos:</h2>
+		<p class="p2">.......................................................................................................................................................</p>
+		<p class="p2-1">.........................................................................................................................</p>
+            	<p class="p2-2">....................................................................................................</p>
+            	<p class="p2-3">.....................................................................</p>
+            	<div class="arriba">
+            		<div class="expandir">
 				<div class="child uno">
-					<p><b>ALUMNO:</b> "nombre de alumno y apellidos"</p>
+					<p><b>ALUMNO:</b> Juan Piero Aarón Sanandres Vela</p>
 				</div>
 				<div class="child dos">
-					<p><b>CODIGO:</b> "código del alumno"</p>
+					<p><b>CODIGO:</b> 21319026</p>
 				</div>
 			</div>
 			<div class="expandir1">
 				<div class="juanpi uno">
-					<p><b>CORREO ELECTRONICO:</b> "gmail"</p>
+					<p><b>CORREO ELECTRONICO:</b> jsanandresvela@gmail.com</p>
 				</div>
 				<div class="juanpi uno">
-					<p><b>NÚMERO:</b> "numero movil"</p>
+					<p><b>NÚMERO:</b> 901824071</p>
 				</div>
-			</div>	
-			<h2 class="h2">Mis Cursos</h2>
-			<p class="p2">.......................................................................................................................................................</p>
-				<div class="box black-box">
-					<ol class="ol">
-						<li><a href="https://canvas.utp.edu.pe/courses/268163" target="_BLANK">COMPRENSIÓN Y REDACCIÓN DE TEXTOS II (19289)</a></li>
-						<li><a href="https://canvas.utp.edu.pe/courses/268801" target="_BLANK">INGLES II (19296)</a></li>
-						<li><a href="https://canvas.utp.edu.pe/courses/286363" target="_BLANK">INTRODUCCION A LA MATEMATICA PARA INGENIERIA (39994)</a></li>
-						<li><a href="https://canvas.utp.edu.pe/courses/277179" target="_BLANK">INTRODUCCION A LAS TIC (33066)</a></li>
-						<li><a href="https://canvas.utp.edu.pe/courses/289395" target="_BLANK">PRINCIPIOS DE ALGORITMOS (41623)</a></li>
-						<li><a href="https://canvas.utp.edu.pe/courses/263577" target="_BLANK">TEORIA GENERAL DE SISTEMAS (18655)</a></li>
-					</ol>
-		    	</div>
-		    <h2 class="h2">Refuerzo Academico</h2>
-		    <p class="p2">.......................................................................................................................................................</p>
-			<div class="box black-box">
-				<ul class="ol">
-					<li><a href="https://portalestudiante03.utp.edu.pe/RecursosServicios/TallerCurso?campus_event_type=iSFrVgANCrP2o/CMkZxNrA==&class_nbr=7VEUVDU5DLXwpfaKl5pLqg==&codigoDocente=&fecha=" target="_BLANK">INTRODUCCION A LA MATEMATICA PARA INGENIERIA</a></li>
-					<li><a href="https://portalestudiante03.utp.edu.pe/RecursosServicios/TallerCurso?campus_event_type=iSFrVgANCrP2o/CMkZxNrA==&class_nbr=7VEUUz40DLXwpfaKl5pLqg==&codigoDocente=&fecha=" target="_BLANK">PRINCIPIOS DE ALGORITMOS</a></li>
-					<li><a href="https://portalestudiante03.utp.edu.pe/RecursosServicios/TallerCurso?campus_event_type=iSFrVgANCrP2o/CMkZxNrA==&class_nbr=7VEUUDUxDLXwpfaKl5pLqg==&codigoDocente=&fecha=" target="_BLANK">INGLES II</a></li>
-				</ul>
 			</div>
-			<h2 class="h2">Record de Notas</h2>
+           	</div>	
+		<h2 class="h2">Mis Cursos</h2>
+		<p class="p2">.......................................................................................................................................................</p>
+		<p class="p2-1">.........................................................................................................................</p>	
+            	<p class="p2-2">....................................................................................................</p>
+            	<p class="p2-3">.....................................................................</p>
+                <div class="div1">
+			<ol class="ol">
+				<li><a href="https://canvas.utp.edu.pe/courses/268163" target="_BLANK">COMPRENSIÓN Y REDACCIÓN DE TEXTOS II (19289)</a></li>
+				<li><a href="https://canvas.utp.edu.pe/courses/268801" target="_BLANK">INGLES II (19296)</a></li>
+				<li><a href="https://canvas.utp.edu.pe/courses/286363" target="_BLANK">INTRODUCCION A LA MATEMATICA PARA INGENIERIA (39994)</a></li>
+				<li><a href="https://canvas.utp.edu.pe/courses/277179" target="_BLANK">INTRODUCCION A LAS TIC (33066)</a></li>
+				<li><a href="https://canvas.utp.edu.pe/courses/289395" target="_BLANK">PRINCIPIOS DE ALGORITMOS (41623)</a></li>
+				<li><a href="https://canvas.utp.edu.pe/courses/263577" target="_BLANK">TEORIA GENERAL DE SISTEMAS (18655)</a></li>
+			</ol>
+		</div>
+		<h2 class="h2">Refuerzo Academico</h2>
+		<p class="p2">.......................................................................................................................................................</p>
+		<p class="p2-1">.........................................................................................................................</p>
+            	<p class="p2-2">....................................................................................................</p>
+		<p class="p2-3">.....................................................................</p>
+            	<div class="div1">
+			<ul class="ol">
+				<li><a href="https://portalestudiante03.utp.edu.pe/RecursosServicios/TallerCurso?campus_event_type=iSFrVgANCrP2o/CMkZxNrA==&class_nbr=7VEUVDU5DLXwpfaKl5pLqg==&codigoDocente=&fecha=" target="_BLANK">INTRODUCCION A LA MATEMATICA PARA INGENIERIA</a></li>
+				<li><a href="https://portalestudiante03.utp.edu.pe/RecursosServicios/TallerCurso?campus_event_type=iSFrVgANCrP2o/CMkZxNrA==&class_nbr=7VEUUz40DLXwpfaKl5pLqg==&codigoDocente=&fecha=" target="_BLANK">PRINCIPIOS DE ALGORITMOS</a></li>
+				<li><a href="https://portalestudiante03.utp.edu.pe/RecursosServicios/TallerCurso?campus_event_type=iSFrVgANCrP2o/CMkZxNrA==&class_nbr=7VEUUDUxDLXwpfaKl5pLqg==&codigoDocente=&fecha=" target="_BLANK">INGLES II</a></li>
+			</ul>
+		</div>
+            	<div>
+			<h2 class="h2">Cursos virtuales:</h2>
 			<p class="p2">.......................................................................................................................................................</p>
-			<div class="box black-box">
-				<table cellspacing="0">
-					<tr>
+			<p class="p2-1">.........................................................................................................................</p>
+                	<p class="p2-2">....................................................................................................</p>
+                	<p class="p2-3">.....................................................................</p>
+                	<p class="p3">- Los materiales de los cursos están disponibles todos los días de la semana.</p>
+			<p class="p3">- Tu decides el horario y tu avance semanal.</p>
+			<div class="table">
+				<table border="1">
+					<tr class="tr1">
 						<td>Curso</td>
-						<td>Docente</td>
-						<td>Horas Semanales</td>
-						<td>Creditos</td>
-						<td>inasistencia</td>
-						<td>Ultima nota</td>
-						<td>Modalidad de enseñanza</td>
+						<td>Horas</td>
+						<td>Ingresa a tu curso</td>
 					</tr>
-					<tr>
-						<td>COMPRENSIÓN Y REDACCIÓN DE TEXTOS II</td>
-						<td></td>
-						<td>4</td>
-						<td>4</td>
-						<td>0%</td>
-						<td>13</td>
-						<td class="td">REMOTO</td>
-					</tr>
-					<tr>
-						<td>INGLES II</td>
-						<td></td>
-						<td>3</td>
-						<td>3</td>
-						<td>0%</td>
-						<td>18</td>
-						<td class="td">VIRTUAL</td>
-					</tr>
-					<tr>
-						<td>INTRODUCCION A LA MATEMATICA PARA INGENIERIA</td>
-						<td></td>
-						<td>5</td>
-						<td>5</td>
-						<td>0%</td>
-						<td>20</td>
-						<td class="td">REMOTO</td>
-					</tr>
-					<tr>
-						<td>INTRODUCCION A LAS TIC</td>
-						<td></td>
-						<td>3</td>
-						<td>2</td>
-						<td>0%</td>
-						<td>19</td>
-						<td class="td">REMOTO</td>
-					</tr>
-					<tr>
-						<td>PRINCIPIOS DE ALGORITMOS</td>
-						<td></td>
-						<td>2</td>
-						<td>2</td>
-						<td>0%</td>
-						<td>19</td>
-						<td class="td">REMOTO</td>
-					</tr>
-					<tr>
-						<td>TEORIA GENERAL DE SISTEMAS</td>
-						<td></td>
-						<td>2</td>
-						<td>2</td>
-						<td>0%</td>
-						<td>17</td>
-						<td class="td">REMOTO</td>
+					<tr class="tr2">
+						<td>Ingles</td>
+						<td>24</td>
+						<td>Canvas</td>
 					</tr>
 				</table>
-			</div>
-			<div>
-				<h2 class="h2">Cursos virtuales:</h2>
-				<p class="p2">.......................................................................................................................................................</p>
-				<p class="p3">- Los materiales de los cursos están disponibles todos los días de la semana.</p>
-				<p class="p3">- Tu decides el horario y tu avance semanal.</p>
-				<div class="table">
-					<table border="1" cellspacing="0">
-						<tr class="tr1">
-							<td>Curso</td>
-							<td>Horas</td>
-							<td>Ingresa a tu curso</td>
-						</tr>
-						<tr class="tr2">
-							<td>Ingles</td>
-							<td>24</td>
-							<td>Canvas</td>
-						</tr>
-					</table>
-				</div>	
-			</div>
-			<p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>	
 		</div>
-	</main>
-	<footer class="footer">
-		<div class="container">
-			<a href="https://www.flaticon.es/iconos-gratis/whatsapp" title="whatsapp iconos">Whatsapp iconos creados por Freepik - Flaticon</a>
-			<p class="p1">Pagina diseñada por @Juanpi</p>
-		</div>
-		<a href="index3.html">PROBANDO SECCIONES</a>
-	</footer>
+    </main>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script>
 		jQuery('document').ready(function($){
